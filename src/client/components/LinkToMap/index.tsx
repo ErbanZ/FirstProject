@@ -7,7 +7,7 @@ interface Iprops {
 
 const LinkToMap: React.FunctionComponent<Iprops> = ({
   name,
-  city = '510100', // ????
+  city = '510100', // city of number
 }) => {
   return (
     <a
