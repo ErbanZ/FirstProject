@@ -261,6 +261,5 @@ const util = {
   getBasicColumnGraphData,
   getYearList
 };
-
 export default util;
 
