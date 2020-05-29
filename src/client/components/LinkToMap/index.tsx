@@ -11,6 +11,7 @@ const LinkToMap: React.FunctionComponent<Iprops> = ({
 }) => {
   return (
     <a
+      // 高德地图
       href={`https://www.amap.com/search?query=${name}&city=${city}`}
       target="_blank"
       rel="nofollow me noopener noreferrer"
