@@ -1,18 +1,18 @@
-import React from 'react';
-import _ from 'lodash';
+import { Col, Layout, Row, Tabs } from 'antd';
 import dayjs from 'dayjs';
-import { Layout, Col, Row, Tabs } from 'antd';
+import _ from 'lodash';
+import React from 'react';
 import { RouteComponentProps } from 'react-router';
-
-import utils from '../../utils';
 import BasicAreaGraph from '../../components/BasicAreaGraph';
-import WholeTable from '../../components/WholeTable';
-import StatisticCard from '../../components/StatisticCard';
-import Rank from '../../components/Rank';
 import BasicColumnGraph from '../../components/BasicColumnGraph';
-import { AppContext } from '../../context/appContext';
+import Rank from '../../components/Rank';
+import StatisticCard from '../../components/StatisticCard';
+import WholeTable from '../../components/WholeTable';
 import * as constants from '../../constants';
+import { AppContext } from '../../context/appContext';
+import utils from '../../utils';
 import './styles.less';
+
 
 const { lazy, useContext } = React;
 const { TabPane } = Tabs;
@@ -131,3 +131,4 @@ const Home: React.FunctionComponent<RouteComponentProps> = () => {
 };
 
 export default Home;
+
