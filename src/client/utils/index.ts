@@ -1,6 +1,6 @@
-import _ from 'lodash';
 import dayjs from 'dayjs';
-import { HOUSE_NUMBER, BUILDER_NUMBER, AREA } from '../constants';
+import _ from 'lodash';
+import { AREA, BUILDER_NUMBER, HOUSE_NUMBER } from '../constants';
 
 interface Iauarter {
   thisQuarterStart: dayjs.Dayjs;
@@ -263,3 +263,4 @@ const util = {
 };
 
 export default util;
+
