@@ -4,6 +4,7 @@ import CurrentYear from './containers/CurrentYear';
 import Home from './containers/Home';
 import PastYear from './containers/PastYear';
 
+// 选择年份
 function Routes() {
   return (
     <Switch>
@@ -17,4 +18,3 @@ function Routes() {
 }
 
 export default Routes;
-
