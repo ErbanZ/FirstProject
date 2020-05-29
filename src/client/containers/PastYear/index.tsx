@@ -1,16 +1,16 @@
-import React from 'react';
-import _ from 'lodash';
 import { Layout, Tabs } from 'antd';
+import _ from 'lodash';
+import React from 'react';
 import { RouteComponentProps } from 'react-router';
-
-import util from '../../utils/index';
-import ChartPanel from '../../components/ChartPanel';
-import WholeTable from '../../components/WholeTable';
-import StatisticCard from '../../components/StatisticCard/past';
 import BasicColumnGraph from '../../components/BasicColumnGraph';
+import ChartPanel from '../../components/ChartPanel';
 import { RenderLoadingJSX } from '../../components/HOC/RenderLoadingComponent';
-import { AppContext } from '../../context/appContext';
+import StatisticCard from '../../components/StatisticCard/past';
+import WholeTable from '../../components/WholeTable';
 import * as constants from '../../constants';
+import { AppContext } from '../../context/appContext';
+import util from '../../utils/index';
+
 
 const { useContext } = React;
 const { Content } = Layout;
@@ -82,3 +82,4 @@ const PastYear: React.FunctionComponent<RouteComponentProps> = () => {
 };
 
 export default PastYear;
+

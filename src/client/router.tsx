@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import PastYear from './containers/PastYear';
 import CurrentYear from './containers/CurrentYear';
 import Home from './containers/Home';
+import PastYear from './containers/PastYear';
 
 function Routes() {
   return (
@@ -17,3 +17,4 @@ function Routes() {
 }
 
 export default Routes;
+
