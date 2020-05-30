@@ -104,3 +104,4 @@ const CommonTable: React.FunctionComponent = () => {
 };
 
 export default RenderLoadingComponent(CommonTable);
+
