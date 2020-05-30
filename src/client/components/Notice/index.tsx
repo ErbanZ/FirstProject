@@ -1,10 +1,10 @@
-import React from 'react';
-import { notification } from 'antd';
 import { SyncOutlined } from '@ant-design/icons';
+import { notification } from 'antd';
 import gql from 'graphql-tag';
+import React from 'react';
 import config from '../../config';
-import './styles.less';
 import { AppContext, IappContext } from '../../context/appContext';
+import './styles.less';
 
 const { useState, useContext } = React;
 
@@ -44,6 +44,7 @@ function openNotification(setLoading: Function, appState: IappContext) {
     });
 }
 
+// 加载 notice 组件
 const Notice: React.FunctionComponent = () => {
   const [isLoading, setLoading] = useState(false);
   const appState = useContext(AppContext);

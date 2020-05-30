@@ -1,12 +1,9 @@
-import React from 'react';
 import '@testing-library/jest-dom/extend-expect';
-import {
-  render,
-  RenderResult,
-  fireEvent,
-  waitFor,
-} from '@testing-library/react';
+import { fireEvent, render, RenderResult, waitFor } from '@testing-library/react';
+import React from 'react';
 import Notice from '../../src/client/components/Notice';
+
+// notice 组件
 
 let wrapper: RenderResult;
 describe('Notice 组件', () => {
