@@ -1,6 +1,6 @@
-import React from 'react';
-import _ from 'lodash';
 import { Table } from 'antd';
+import _ from 'lodash';
+import React from 'react';
 import { AppContext } from '../../context/appContext';
 import { RenderLoadingComponent } from '../HOC/RenderLoadingComponent';
 import LinkToMap from '../LinkToMap';
@@ -87,6 +87,7 @@ const CommonTable: React.FunctionComponent = () => {
   // eslint-disable-next-line no-underscore-dangle
   const data = allData.map((item) => ({ key: item._id, ...item }));
 
+  // 汇总表 组件
   return (
     <Table
       title={() => '汇总表'}
