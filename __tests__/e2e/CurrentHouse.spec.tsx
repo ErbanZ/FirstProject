@@ -1,12 +1,8 @@
-import React from 'react';
 import '@testing-library/jest-dom/extend-expect';
 import { render, RenderResult } from '@testing-library/react';
-import {
-  AppContext,
-  globalData,
-  IappContext,
-} from '../../src/client/context/appContext';
+import React from 'react';
 import CurrentHouse from '../../src/client/components/CurrentHouse';
+import { AppContext, globalData, IappContext } from '../../src/client/context/appContext';
 
 const appState: IappContext = {
   ...globalData,
@@ -34,6 +30,7 @@ describe('CurrentHouse 组件', () => {
     );
   });
 
+  // 组件渲染
   it('是否正确渲染', () => {
     expect(wrapper.getByText('正在登记')).toBeInTheDocument();
     expect(

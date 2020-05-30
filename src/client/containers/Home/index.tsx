@@ -51,7 +51,7 @@ const Home: React.FunctionComponent<RouteComponentProps> = () => {
         month: key,
         [constants.HOUSE_NUMBER]: houseNumber,
       });
-    });
+    });``
 
   // 构建排行数据（排序组件）
   const builderRankData = builderData.map((item) => ({

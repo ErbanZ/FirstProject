@@ -1,6 +1,6 @@
-import React, { useContext } from 'react';
-import { Collapse, List, Col, Row } from 'antd';
 import { NotificationOutlined } from '@ant-design/icons';
+import { Col, Collapse, List, Row } from 'antd';
+import React, { useContext } from 'react';
 import { HOUSE_PURCHASE_REGISTRATION } from '../../constants';
 import { AppContext } from '../../context/appContext';
 import { RenderLoadingComponent } from '../HOC/RenderLoadingComponent';
@@ -40,6 +40,7 @@ const CurrentHouse: React.FunctionComponent = () => {
       </div>
     ));
 
+  // 同步更新
   const result =
     currentHouses.length > 0 ? (
       <Collapse defaultActiveKey={['1']}>
