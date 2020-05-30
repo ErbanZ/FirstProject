@@ -33,6 +33,7 @@ const Home: React.FunctionComponent<RouteComponentProps> = () => {
   const { allData } = useContext(AppContext);
 
   // 构建区域图需要的数据
+
   const arrayByDay = _.groupBy(allData, (item) => {
     return dayjs(item.beginTime).format('YYYY-MM');
   });
@@ -54,6 +55,7 @@ const Home: React.FunctionComponent<RouteComponentProps> = () => {
     });
 
   // 构建排行数据
+
   const builderRankData = builderData.map((item) => ({
     _id: utils.getRandomId(),
     name: item.month,
@@ -66,6 +68,7 @@ const Home: React.FunctionComponent<RouteComponentProps> = () => {
   }));
 
   // 柱状图数据
+  
   const { chartHouseData, chartBuilderData } = utils.getBasicColumnGraphData(
     allData
   );
