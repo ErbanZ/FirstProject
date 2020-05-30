@@ -1,8 +1,8 @@
-import React from 'react';
 import '@testing-library/jest-dom/extend-expect';
 import { render, RenderResult } from '@testing-library/react';
-
+import React from 'react';
 import Rank, { Iprops } from '../../src/client/components/Rank';
+
 
 const props: Iprops = {
   title: '2018年06月',
@@ -16,6 +16,7 @@ const props: Iprops = {
   ],
 };
 
+// 排序组件
 let wrapper: RenderResult;
 describe('Rank 组件', () => {
   beforeEach(() => {

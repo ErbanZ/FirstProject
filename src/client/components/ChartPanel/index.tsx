@@ -1,13 +1,13 @@
-import React from 'react';
 import { Col, Row } from 'antd';
 import dayjs from 'dayjs';
 import _ from 'lodash';
-
+import React from 'react';
 import { AppContext } from '../../context/appContext';
 import CricleGraph from '../CricleGraph';
-import Rank from '../Rank';
 import DoubleAxisGraph from '../DoubleAxisGraph';
 import { RenderLoadingComponent } from '../HOC/RenderLoadingComponent';
+import Rank from '../Rank';
+
 
 const { useState, useContext } = React;
 let currentState: Istate;
@@ -18,6 +18,7 @@ export interface Iprops {
   activityKey: string;
 }
 
+// 排序组件接口
 interface Istate {
   isChangeTab: boolean;
   isOpen: boolean;

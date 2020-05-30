@@ -1,8 +1,8 @@
-import React from 'react';
 import '@testing-library/jest-dom/extend-expect';
 import { render, RenderResult } from '@testing-library/react';
-import { AppContext, globalData } from '../../src/client/context/appContext';
+import React from 'react';
 import ChartPanel, { Iprops } from '../../src/client/components/ChartPanel';
+import { AppContext, globalData } from '../../src/client/context/appContext';
 
 const props: Iprops = {
   data: [
@@ -30,6 +30,7 @@ describe('ChartPanel 组件', () => {
     );
   });
 
+  // 排序组件
   it('子图表是否渲染正确渲染', () => {
     expect(wrapper.container.querySelectorAll('canvas').length).toBe(2);
     expect(wrapper.container.querySelector('.rank')).toBeInTheDocument();

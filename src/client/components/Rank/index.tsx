@@ -1,9 +1,10 @@
-import React from 'react';
 import _ from 'lodash';
-import './styles.less';
+import React from 'react';
 import { RenderLoadingComponent } from '../HOC/RenderLoadingComponent';
 import LinkToMap from '../LinkToMap';
+import './styles.less';
 
+// 排序接口
 interface Irank {
   _id: string;
   name: string;

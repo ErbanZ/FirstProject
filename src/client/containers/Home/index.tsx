@@ -53,7 +53,8 @@ const Home: React.FunctionComponent<RouteComponentProps> = () => {
       });
     });
 
-  // 构建排行数据
+  // 构建排行数据（排序组件）
+
   const builderRankData = builderData.map((item) => ({
     _id: utils.getRandomId(),
     name: item.month,
