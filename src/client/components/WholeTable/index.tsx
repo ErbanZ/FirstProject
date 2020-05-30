@@ -15,6 +15,7 @@ const CommonTable: React.FunctionComponent = () => {
     text: item,
     value: item,
   }));
+  
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const columns: any[] = [
     {
@@ -53,6 +54,7 @@ const CommonTable: React.FunctionComponent = () => {
       sorter: (a: cdFang.IhouseData, b: cdFang.IhouseData) =>
         new Date(a.endTime).getTime() - new Date(b.endTime).getTime(),
     },
+    
     {
       title: '报名状态',
       dataIndex: 'status',
