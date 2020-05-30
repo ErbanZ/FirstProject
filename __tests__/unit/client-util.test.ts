@@ -1,6 +1,8 @@
 import dayjs from 'dayjs';
-import { mockHouse as mockData, mockArea } from '../../__mocks__/db';
 import util from '../../src/client/utils/index';
+import { mockArea, mockHouse as mockData } from '../../__mocks__/db';
+
+// 前端组件渲染单元测试
 
 const setup = () => ({
   currentQuarter: util.getCurrentQuarter(),

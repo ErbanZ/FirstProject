@@ -1,6 +1,8 @@
 /* eslint-disable no-undefined */
 import * as util from '../../src/nodeuii/utils';
 
+// 后台数据单元测试
+
 const mockArray = [
   [
     '7EFCBD1761A402A2E053AC1D15D793F3',
