@@ -74,4 +74,5 @@ describe('client util测试', () => {
     expect(typeof util.sortArea).toBe('function');
     expect(util.sortArea(mockArea)).toHaveLength(mockArea.length);
   });
+
 });

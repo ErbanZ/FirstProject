@@ -1,9 +1,7 @@
-import React from 'react';
 import '@testing-library/jest-dom/extend-expect';
 import { render, RenderResult } from '@testing-library/react';
-import BasicAreaGraph, {
-  Iprops,
-} from '../../src/client/components/BasicAreaGraph';
+import React from 'react';
+import BasicAreaGraph, { Iprops } from '../../src/client/components/BasicAreaGraph';
 
 const props: Iprops = {
   title: '房源数',
@@ -25,6 +23,7 @@ describe('BasicAreaGraph 组件', () => {
       wrapper.getByText(`${props.title} / 月(统计图)`)
     ).toBeInTheDocument();
   });
+
 
   it('自定义 title 是否正确渲染', () => {
     wrapper.rerender(<BasicAreaGraph {...props} title="楼盘数" />);

@@ -1,6 +1,6 @@
-import React from 'react';
 import '@testing-library/jest-dom/extend-expect';
 import { render, RenderResult } from '@testing-library/react';
+import React from 'react';
 import Loading from '../../src/client/components/Loading';
 
 const props = {
