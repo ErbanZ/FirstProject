@@ -177,3 +177,4 @@ const mockArea = [
 ];
 
 export { mockHouse, mockArea };
+
