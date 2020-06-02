@@ -16,6 +16,7 @@ const analyticsHander = {
             /[\s|\n]/g,
             ''
           );
+
           const matchedArray = queryString.match(/(?<={)\w+/);
           const routerName = matchedArray == null ? '' : matchedArray[0];
           analyticsModel.add({ routerName });
