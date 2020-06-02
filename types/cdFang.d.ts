@@ -33,3 +33,4 @@ declare namespace cdFang {
     percent: number;
   }
 }
+
